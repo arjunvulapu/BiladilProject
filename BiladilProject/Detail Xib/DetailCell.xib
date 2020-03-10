@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TitilliumWeb-Regular.ttf">
+            <string>TitilliumWeb-Regular</string>
+        </array>
+        <array key="TitilliumWeb-SemiBold.ttf">
+            <string>TitilliumWeb-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="CyU-3j-KUn" customClass="DetailCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CyU-3j-KUn" id="OJb-eb-dyr">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gLk-t5-sL7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="230"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="230" id="wJ8-za-N8N"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdo-85-VGo">
+                        <rect key="frame" x="10" y="238" width="300" height="56.5"/>
+                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NYv-BC-NdH">
+                        <rect key="frame" x="10" y="173" width="300" height="17.5"/>
+                        <fontDescription key="fontDescription" name="TitilliumWeb-Regular" family="Titillium Web" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9F-ai-e3O">
+                        <rect key="frame" x="10" y="200.5" width="300" height="17.5"/>
+                        <fontDescription key="fontDescription" name="TitilliumWeb-SemiBold" family="Titillium Web" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.4431372549" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gdo-85-VGo" firstAttribute="top" secondItem="f9F-ai-e3O" secondAttribute="bottom" constant="20" id="BRy-dL-mLu"/>
+                    <constraint firstItem="gLk-t5-sL7" firstAttribute="top" secondItem="OJb-eb-dyr" secondAttribute="top" id="EpY-1h-mgV"/>
+                    <constraint firstItem="f9F-ai-e3O" firstAttribute="top" secondItem="NYv-BC-NdH" secondAttribute="bottom" constant="10" id="K37-xo-uZI"/>
+                    <constraint firstItem="gLk-t5-sL7" firstAttribute="leading" secondItem="OJb-eb-dyr" secondAttribute="leading" id="M6d-Oo-Vu0"/>
+                    <constraint firstAttribute="trailing" secondItem="gLk-t5-sL7" secondAttribute="trailing" id="Rnh-zz-9y7"/>
+                    <constraint firstItem="gdo-85-VGo" firstAttribute="top" secondItem="gLk-t5-sL7" secondAttribute="bottom" constant="8" id="XxT-ku-RPs"/>
+                    <constraint firstAttribute="trailing" secondItem="NYv-BC-NdH" secondAttribute="trailing" constant="10" id="Ytf-u1-yf8"/>
+                    <constraint firstAttribute="trailing" secondItem="gdo-85-VGo" secondAttribute="trailing" constant="10" id="Ywn-3H-xTn"/>
+                    <constraint firstItem="NYv-BC-NdH" firstAttribute="leading" secondItem="OJb-eb-dyr" secondAttribute="leading" constant="10" id="ZII-GJ-vyB"/>
+                    <constraint firstAttribute="trailing" secondItem="f9F-ai-e3O" secondAttribute="trailing" constant="10" id="d6z-g6-Niv"/>
+                    <constraint firstItem="gdo-85-VGo" firstAttribute="leading" secondItem="OJb-eb-dyr" secondAttribute="leading" constant="10" id="hQa-t5-N61"/>
+                    <constraint firstAttribute="bottom" secondItem="gdo-85-VGo" secondAttribute="bottom" constant="5" id="v72-Dx-8Ap"/>
+                    <constraint firstItem="f9F-ai-e3O" firstAttribute="leading" secondItem="OJb-eb-dyr" secondAttribute="leading" constant="10" id="wxf-3F-VJ5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="jdE-8a-jmJ"/>
+            <connections>
+                <outlet property="detailImageView" destination="gLk-t5-sL7" id="rcF-Z2-isr"/>
+                <outlet property="lblDescription" destination="gdo-85-VGo" id="Rth-Uf-k8o"/>
+                <outlet property="lblTime" destination="f9F-ai-e3O" id="dlm-0p-Vh5"/>
+                <outlet property="lblTitle" destination="NYv-BC-NdH" id="PqG-3N-xro"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="99"/>
+        </tableViewCell>
+    </objects>
+</document>
